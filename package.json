@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --no-cache",
+    "lint": "eslint --no-cache --fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -38,7 +38,7 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "npm run lint"
+      "eslint --fix --no-cache"
     ]
   }
 }
